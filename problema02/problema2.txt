@@ -1,0 +1,48 @@
+
+1. Inicio
+2. funcion principal()
+3. nota1, d[0-n]
+4. nota2, d[0-n]
+5. nota3, d[0-n]
+6. nota4, d[0-n]
+7. suma, d[0-n]
+8. promedio, d[0-n]
+9. cadena, x(200)[{a-b}, {BS}] <-- ""
+10. Escribir "Ingrese el valor de la nota1: "
+11. Leer nota1
+12. Escribir "Ingrese el valor de la nota2: "
+13. Leer nota2
+14. Escribir "Ingrese el valor de la nota3: "
+15. Leer nota3
+16. Escribir "Ingrese el valor de la nota4: "
+17. Leer nota4
+18. obtenerPromedio(nota1, nota2, nota3, nota4)
+19. Escribir cadena
+20. mensajeFinal <-- obtenerPromedio(a, d; b, d; c, d; d, d)
+21. Escribir mensajeFinal
+22. fin funcion principal
+23. funcion obtenerPromedio()
+24. suma = a + b + c + d
+25. promedio = suma/4
+26. Si(promedio > 0 and promedio < 5)entonces
+27.   cadena <-- "El promedio de las notas: %d, %d, %d, %d es Regular",
+                  a, b, c, d
+28. De lo contrario
+29.    Si(promedio > 5.1 and promedio < 8)entonces     
+30.      cadena <-- "El promedio de las notas: %d, %d, %d, %d es Bueno",
+                     a, b, c, d
+31.    De lo contrario
+32.       Si(promedio > 8.1 and promedio < 9)entonces
+33.         cadena <-- "El promedio de las notas: %d, %d, %d, %d es Muy Bueno",
+                        a, b, c, d
+34.       De lo contrario
+35.          Si(promedio > 9.1 and promedio < 10)entonces
+36.            cadena <-- "El promedio de las notas: %d, %d, %d, %d es Sobresaliente",
+                           a, b, c, d
+37.          Fin Si
+38.       Fin Si
+39.    Fin Si
+40. Fin si
+41. return cadena
+42. fin funcion obtenerPromedio()
+43. Fin         

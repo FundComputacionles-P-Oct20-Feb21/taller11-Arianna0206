@@ -1,0 +1,57 @@
+
+1. Inicio
+2. funcion principal()
+3. opcion, i[0-n]
+4. Escribir "Ingrese una opción: \n"
+5. Escribir "Ingrese 1 para sacar el valor de la plantilla de luz: \n,
+             Ingrese 2 para sacar el valor del predio de un bien inmueble: \n"
+6. Leer opcion
+7. Si(opcion == 1)entonces
+8.   calcularValorLuz()
+9. De lo contrario
+10.   Si(opcion == 2)entonces
+11.     calcularPredioInmueble()
+12.   Fin Si
+13. Fin Si
+14. fin funcion principal
+15. funcion calcularValorLuz()
+16. cedula, x(100) [{0-100}]
+17. nombre, x(100) [{A-Z}, {a-z}, {BS}]
+18. precioKilovatios, d[0-n]
+19. numeroKilovatios, d[0-n]
+20. valor, d[0-n]
+21. Escribir "Ingrese su nombre completo: "
+22. Leer nombre
+23. Escribir "Ingrese su número de cédula: "
+24. Leer cedula
+25. Escribir "Ingrese el valor del kilovatio: "
+26. Leer precioKilovatios
+27. Escribir "Ingrese el numero de kilovatios al mes: "
+28. Leer numeroKilovatios
+29. valor <-- precioKilovatios * numeroKilovatios
+30. Escribir ("Cliente %s con cédula %d debe cancelar el valor de $ %.2f\n",
+              nombre,
+              cedula,
+              valor)
+31. fin funcion calcularValorLuz()
+
+32. funcion calcularPredioInmueble()
+33. cedula, x(100) [{0-100}]
+34. nombre, x(100) [{A-Z}, {a-z}, {BS}]
+35. valorInmueble, d[0-n]
+36. valorPredio, d[0-n]
+37. Escribir "Ingrese su nombre completo: "
+38. Leer nombre
+39. Escribir "Ingrese su número de cédula: "
+40. Leer cedula
+41. Escribir "Ingrese el valor del inmueble: "
+42. Leer valorInmueble
+43. valorPredio <-- (valorInmueble * 2)/100
+44. Escribir ("Cliente %s con cédula %d tiene un bien inmueble valorado en  $ %.2f\n 
+              y tiene que pagar de precio $ %.2f\n",
+              nombre, 
+              cedula, 
+              valorInmueble, 
+              valorPredio)
+45. fin funcion calcularPredioInmueble()
+46. Fin
